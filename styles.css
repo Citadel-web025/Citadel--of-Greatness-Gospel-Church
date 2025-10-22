@@ -1,0 +1,27 @@
+:root{
+  --gold: #d4af37;
+  --white: #ffffff;
+  --bg: #ffffff;
+  --muted: #666666;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:var(--bg);color:#111}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:var(--white);border-bottom:1px solid #eee;padding:1rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:0.75rem}
+.logo{width:68px;height:68px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.brand-text h1{margin:0;font-size:18px;color:var(--gold)}
+.motto{margin:0;font-size:12px;color:var(--muted)}
+.main-nav a{margin-left:16px;text-decoration:none;color:#333}
+.main-nav a.cta{background:var(--gold);color:#fff;padding:8px 12px;border-radius:6px}
+.hero{background:linear-gradient(180deg,var(--white),#fff);padding:3rem;border:1px solid #f2f2f2;border-radius:8px;text-align:center}
+.hero h2{color:var(--gold);margin:0 0 0.5rem 0}
+.hero .lead{color:var(--muted)}
+.btn{background:var(--gold);color:#fff;padding:10px 16px;border:none;border-radius:6px;margin-right:8px;cursor:pointer}
+.btn-outline{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:8px 14px;border-radius:6px}
+.site-footer{background:#111;color:#fff;padding:1rem;margin-top:2rem}
+@media(max-width:700px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:0.75rem}
+  .main-nav{display:flex;flex-wrap:wrap;gap:8px}
+}
