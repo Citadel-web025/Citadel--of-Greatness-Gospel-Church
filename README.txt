@@ -1,1 +1,0 @@
-Replace public/logo.svg with your preferred logo file (logo.png or logo.svg).
